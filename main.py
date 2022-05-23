@@ -7,16 +7,16 @@ punctuation = '!#$%&*+-=?@^_'
 
 
 def chars_generator(cond_digits, cond_lower_case, cond_upper_case, cond_symbols):
-    chars = ''
+    chrs = ''
     if cond_digits == 'да':
-        chars += digits
+        chrs += digits
     if cond_lower_case == 'да':
-        chars += lowercase_letters
+        chrs += lowercase_letters
     if cond_upper_case == 'да':
-        chars += uppercase_letters
+        chrs += uppercase_letters
     if cond_symbols == 'да':
-        chars += punctuation
-    return chars
+        chrs += punctuation
+    return chrs
 
 
 def password_generator(lengt, chrs):
